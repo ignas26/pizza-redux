@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom';
 import './sass/main.scss'
 import 'normalize.css';
 import registerServiceWorker from './registerServiceWorker';
-// import me from './playground/default-exports';
-// import {food, getInfo} from './playground/named-exports';
-// import {food as maistas} from './playground/named-exports';
-// import * as all  from './playground/named-exports';
-
 import AppRoutes from './AppRoutes';
+import {createStore, combineReducers} from 'redux'
+import {Provider} from 'react-redux';
+import pizzaReducer from './reducers/pizzaReducer';
 
-ReactDOM.render(<AppRoutes/>, document.getElementById('root'));
+const rootReducer = combineReducers({
+  pizza:pizzaReducer
+});
+
+const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+ReactDOM.render(
+    <Provider store={store}>
+    <AppRoutes/>
+    </Provider>,
+    document.getElementById('root'));
 registerServiceWorker();
