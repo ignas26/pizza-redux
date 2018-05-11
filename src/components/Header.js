@@ -8,7 +8,7 @@ class Header extends React.Component{
           <NavLink exact activeClassName='active' to="/">Home</NavLink>
           <NavLink exact activeClassName='active' to="/pizza">Pizza</NavLink>
           <NavLink exact activeClassName='active' to="/drink">Drink</NavLink>
-          <NavLink exact activeClassName='active' to="/cart">Cart</NavLink>
+          <NavLink exact activeClassName='active' to="/checkout">Checkout</NavLink>
         </header>
     );
   }

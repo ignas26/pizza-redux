@@ -7,9 +7,11 @@ import AppRoutes from './AppRoutes';
 import {createStore, combineReducers} from 'redux'
 import {Provider} from 'react-redux';
 import pizzaReducer from './reducers/pizzaReducer';
+import drinksReducer from './reducers/drinksReducer';
 
 const rootReducer = combineReducers({
-  pizza:pizzaReducer
+  pizza:pizzaReducer,
+  drinks: drinksReducer
 });
 
 const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
