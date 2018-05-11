@@ -8,10 +8,12 @@ import {createStore, combineReducers} from 'redux'
 import {Provider} from 'react-redux';
 import pizzaReducer from './reducers/pizzaReducer';
 import drinksReducer from './reducers/drinksReducer';
+import ordersReducer from './reducers/ordersReducer';
 
 const rootReducer = combineReducers({
   pizza:pizzaReducer,
-  drinks: drinksReducer
+  drinks: drinksReducer,
+  orders: ordersReducer
 });
 
 const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

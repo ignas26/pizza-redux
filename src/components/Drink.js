@@ -6,7 +6,8 @@ class Drink extends React.Component {
     const drinks = this.props.drinks.map((drink, i) => {
       return (
           <li key={i}>
-            {drink.title} {drink.price}€
+            {drink.title}
+            {drink.price}€
             <button onClick={()=>this.props.addDrink(drink)}>
               Į krepšelį
             </button>
@@ -24,10 +25,12 @@ class Drink extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapDispatchToProps = (dispatch)=>{
   return {
-    drinks: state.drinks
+    addDrink(drink){
+      dispatch({type:'ADD_DRINK',payload:drink})
+    }
   }
 };
 
-export default connect(mapStateToProps)(Drink)
+export default connect(mapStateToProps, mapDispatchToProps)(Drink)

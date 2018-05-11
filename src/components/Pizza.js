@@ -30,5 +30,12 @@ const mapStateToProps = (state) => {
   }
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addOrder(pizza) {
+      dispatch({type:'ADD_PIZZA',payload:pizza})
+    }
+  }
+};
 
-export default connect(mapStateToProps)(Pizza)
+export default connect(mapStateToProps, mapDispatchToProps)(Pizza)
