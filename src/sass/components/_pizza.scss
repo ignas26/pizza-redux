@@ -1,0 +1,23 @@
+.pizza-page{
+
+    .pizza-menu{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin:auto;
+        justify-content: space-between;
+    }
+    .pizza{
+        margin-bottom:40px;
+        padding-bottom:20px;
+        width:30%;
+        background: #eee;
+    }
+}
+ul{
+    list-style: none;
+
+}
+li{
+    font-size:24px;
+}

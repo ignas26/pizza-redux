@@ -25,6 +25,12 @@ class Drink extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    drinks: state.drinks
+  }
+};
+
 const mapDispatchToProps = (dispatch)=>{
   return {
     addDrink(drink){
