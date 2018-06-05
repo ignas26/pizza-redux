@@ -18,7 +18,9 @@ class Checkout extends React.Component{
           <h1>Checkout</h1>
           <ul>
             {order}
+            {this.props.orders.length>0 &&
             {orders}
+            }
           </ul>
         </div>
     );
