@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/img/pizza.png';
-import welcome from '../assets/img/welcome.jpg';
+import welcome from '../assets/img/welcome.png';
 
 class Home extends React.Component{
   state={

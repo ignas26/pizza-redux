@@ -5,22 +5,22 @@ class Drink extends React.Component {
   render() {
     const drinks = this.props.drinks.map((drink, i) => {
       return (
-          <li key={i}>
-            {drink.title}
-            {drink.price}€
-            <button onClick={()=>this.props.addDrink(drink)}>
+          <div key={i} className="drink">
+            <h3>{drink.title}</h3>
+            <p>{drink.price}€</p>
+            <button className="drinkBtn" onClick={()=>this.props.addDrink(drink)}>
               Į krepšelį
             </button>
-          </li>
+          </div>
       )
     });
     return (
-        <div>
-          <h1>Drink</h1>
-          <ul>
+<div>
+  <h1>Drinks</h1>
+  <div className="drinkGnrl">
             {drinks}
-          </ul>
-        </div>
+  </div>
+</div>
     );
   }
 }

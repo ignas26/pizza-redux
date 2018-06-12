@@ -1,16 +1,16 @@
 export default [
   {
-    title:'Gurmaniska',
+    title:'Gurmaniška',
     description:'Pomidorų padažas, mocarelos sūris, jautiena, vištiena, kumpis, raudonieji svogūnai, pievagrybiai, aštrus padažas',
     price:14.25
   },
   {
-    title:'Studentiska',
+    title:'Studentiška',
     description:'Pomidorų padažas, kumpis, pomidorai, pievagrybiai, mocarelos sūris, raudonėliai',
     price:11.05
   },
   {
-    title:'Meksikietiska',
+    title:'Meksikietiška',
     description:'Pomidorų padažas, vištiena, paprikos, saliamis, mocarelos sūris, pomidorai, pievagrybiai, jalapeno pipirai',
     price:7.11
   },

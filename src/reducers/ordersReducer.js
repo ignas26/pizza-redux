@@ -8,7 +8,7 @@ const ordersReducer = (state = [], action) => {
     case 'REMOVE_ALL' :
       return [...state].filter((item, i) => item !== action.payload[i]);
     case 'REMOVE_ITEM' :
-      return [...state].filter((item, i) => item !== action.payload);
+      return [...state].filter((item, i) => i !== action.payload);
     default : return state
   }
 };
